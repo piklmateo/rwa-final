@@ -1,5 +1,5 @@
 # Final project for course "Razvoj web aplikacija"
-## Technology
+## Tech Stack
 - Angular
 - Scss
 - Nodejs
