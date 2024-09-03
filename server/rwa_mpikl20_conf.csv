@@ -1,7 +1,9 @@
 jwtValjanost=15s
+//random-key
 jwtTajniKljuc=eyJhbGciOiJIUzI1NiJ9eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVz
+//random-key
 tajniKljucSesija=ZSIsImV4cCI6MTcwMDAzOTA0NSwiaWF0IjoxNzAwMDM5MDQ1fQVBrdR2k4fEc8aKZWHCKkxo8onh5x3vGnDjfQFjhQffhxp
 appStranicenje=5
 tmdb.apikey.v3=
 tmdb.apikey.v4=
-recaptchaTajniKljuc=6LeQgUQpAAAAAO1oIkrhkU1SYeZ_584pDtUj9kPE
+recaptchaTajniKljuc=
