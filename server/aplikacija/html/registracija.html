@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Početna</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/mpikl20.css">
+    <script src="/js/registracija.js"></script>
+</head>
+
+<body class="background container">
+    <header>
+        <div class="logo-container">
+            <div><img class="logo" src="/slike/tv_logo.png" alt="tv_logo"></div>
+            <div><h1>Registracija</h1></div>
+        </div>
+    </header>
+    <nav class="nav">#navigacija#</nav>
+    <div class="div-line"></div>
+    <main>
+        <div id="poruka">#poruka#</div>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-item">
+                    <form action="/registracija" method="POST">
+                        <label for="ime">Ime:</label>
+                        <input type="text" name="ime" id="ime" required/>
+                        <br>
+                        <label for="prezime">Prezime:</label>
+                        <input type="text" name="prezime" id="prezime" required/>
+                        <br>
+                        <label for="adresa">Adresa: </label>
+                        <input type="text" name="adresa" id="adresa" required/>
+                        <br>
+                        <label for="postanski_broj">Postanski broj: </label>
+                        <input type="number" name="postanski_broj" id="postanski_broj" required/>
+                        <br>
+                        <label for="broj_mobitela">Broj mobitela: </label>
+                        <input type="number" name="broj_mobitela" id="broj_mobitela" required/>
+                        <br>
+                        <label for="korime">Korisničko ime:</label>
+                        <input type="text" name="korime" id="korime" required/>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="mail" name="email" id="email" required/>
+                        <br>
+                        <label for="lozinka">Lozinka:</label>
+                        <input type="password" name="lozinka" id="lozinka" required/>
+                        <br>
+                        <button class="frm-button" type="submit" value="Registriraj">Registriraj se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="text-center">&copy; 2023. Mateo Pikl</p>
+    </footer>
+</body>
+
+</html>

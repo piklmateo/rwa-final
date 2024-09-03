@@ -1,0 +1,50 @@
+:root {
+    /* colors */
+    --clr-background-black: #1E1F22;
+    --clr-white: #E8EAEF;
+    --clr-grey: #8E9199;
+    --clr-btn-orange: #DB6D3D;
+    --clr-btn-hover: rgb(250, 136, 87);
+}
+
+h1 {
+    color: var(--clr-primary);
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: var(--clr-secondary);
+    }
+
+    a:hover {
+        color: var(--clr-txt-primary);
+    }
+}
+
+.desno-nav {
+    margin-left: auto;
+}
+
+.background-black {
+    background-color: var(--clr-background-black);
+}
+
+header {
+    padding-top: 1.5rem;
+}
+
+nav {
+    padding-block: 1rem;
+}
+
+.div-line {
+    border: 1px solid var(--clr-txt-primary);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}

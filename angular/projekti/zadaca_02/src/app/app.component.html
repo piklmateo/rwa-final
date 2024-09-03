@@ -1,0 +1,46 @@
+<header>
+  <div class="container">
+    <h1>Zadaca 02</h1>
+  </div>
+</header>
+<div>
+  <div class="container">
+    <nav>
+      <!--POCETNA-->
+      <a *ngIf="dohvatiTipKorisnika() === '0'" routerLink="/" (click)="putanja = 'pocetna'">Pocetna</a>
+      <a *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/" (click)="putanja = 'pocetna'">Pocetna</a>
+      <a *ngIf="dohvatiTipKorisnika() === '2'" routerLink="/" (click)="putanja = 'pocetna'">Pocetna</a>
+      <a *ngIf="dohvatiTipKorisnika() === '3'" routerLink="/" (click)="putanja = 'pocetna'">Pocetna</a>
+
+      <!--REGISTRACIJA-->
+      <a *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/registracija" (click)="putanja = 'registracija'">Registracija</a>
+
+      <!--PRIJAVA-->
+      <a *ngIf="dohvatiTipKorisnika() === '0'" routerLink="/prijava" (click)="putanja = 'prijava'">Prijava</a>
+
+      <!--PROFIL-->
+      <a *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/profil" (click)="putanja = 'profil'">Profil</a>
+      <a *ngIf="dohvatiTipKorisnika() === '2'" routerLink="/profil" (click)="putanja = 'profil'">Profil</a>
+
+      <!--KORISNICI-->
+      <a *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/korisnici" (click)="putanja = 'korisnici'">Korisnici</a>
+
+      <!--DOKUMENTACIJA-->
+      <a *ngIf="dohvatiTipKorisnika() === '0'" routerLink="/dokumentacija" (click)="putanja = 'dokumentacija'">Dokumentacija</a>
+      <a *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/dokumentacija" (click)="putanja = 'dokumentacija'">Dokumentacija</a>
+      <a *ngIf="dohvatiTipKorisnika() === '2'" routerLink="/dokumentacija" (click)="putanja = 'dokumentacija'">Dokumentacija</a>
+      <a *ngIf="dohvatiTipKorisnika() === '3'" routerLink="/dokumentacija" (click)="putanja = 'dokumentacija'">Dokumentacija</a>
+      
+
+      <!--ODJAVA-->
+      <a class="desno-nav" *ngIf="dohvatiTipKorisnika() === '1'" routerLink="/prijava" (click)="odjava()">Odjava</a>
+      <a class="desno-nav" *ngIf="dohvatiTipKorisnika() === '2'" routerLink="/prijava" (click)="odjava()">Odjava</a>
+      <a class="desno-nav" *ngIf="dohvatiTipKorisnika() === '3'" routerLink="/prijava" (click)="odjava()">Odjava</a>
+    </nav>
+    <div class="div-line"></div>
+  </div>
+</div>
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
+<footer><div class="container">Mateo Pikl &copy; 2023</div></footer>

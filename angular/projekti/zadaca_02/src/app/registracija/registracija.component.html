@@ -1,0 +1,81 @@
+<div class="profile-container">
+  <div class="profile">
+    <div class="profile-item">
+      <form (ngSubmit)="registracija()" #registrationForm="ngForm">
+        <label for="ime">Ime:</label>
+        <input type="text" name="ime" id="ime" required [(ngModel)]="ime" />
+        <br />
+        <label for="prezime">Prezime:</label>
+        <input
+          type="text"
+          name="prezime"
+          id="prezime"
+          required
+          [(ngModel)]="prezime"
+        />
+        <br />
+        <label for="adresa">Adresa: </label>
+        <input
+          type="text"
+          name="adresa"
+          id="adresa"
+          required
+          [(ngModel)]="adresa"
+        />
+        <br />
+        <label for="postanski_broj">Postanski broj: </label>
+        <input
+          type="number"
+          name="postanski_broj"
+          id="postanski_broj"
+          required
+          [(ngModel)]="postanski_broj"
+        />
+        <br />
+        <label for="broj_mobitela">Broj mobitela: </label>
+        <input
+          type="number"
+          name="broj_mobitela"
+          id="broj_mobitela"
+          required
+          [(ngModel)]="broj_mobitela"
+        />
+        <br />
+        <label for="korime">Korisničko ime:</label>
+        <input
+          type="text"
+          name="korime"
+          id="korime"
+          required
+          [(ngModel)]="korime"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          [(ngModel)]="email"
+        />
+        <br />
+        <label for="lozinka">Lozinka:</label>
+        <input
+          type="password"
+          name="lozinka"
+          id="lozinka"
+          required
+          [(ngModel)]="lozinka"
+        />
+        <br />
+        <br>
+        <button
+          class="frm-button"
+          type="submit"
+          [disabled]="registrationForm.invalid">
+          Registriraj se
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

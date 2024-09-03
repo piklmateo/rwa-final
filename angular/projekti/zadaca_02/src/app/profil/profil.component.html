@@ -1,0 +1,29 @@
+<div class="profile-container">
+  <div class="profile">
+    <div class="profile-item">
+        <label for="ime">Ime:</label><br />
+        <input type="text" id="ime" name="ime" [(ngModel)]="ime" />
+        <br />
+        <label for="prezime">Prezime:</label><br />
+        <input type="text" id="prezime" name="prezime" [(ngModel)]="prezime" />
+        <br />
+        <label for="adresa">Adresa:</label><br />
+        <input type="text" id="adresa" name="adresa" [(ngModel)]="adresa" />
+        <br />
+        <label for="postanski_broj">Postanski broj:</label><br />
+        <input type="number" id="postanski_broj" name="postanski_broj" [(ngModel)]="postanski_broj" />
+        <br />
+        <label for="broj_mobitela">Broj mobitela:</label><br />
+        <input type="number" id="broj_mobitela" name="broj_mobitela" [(ngModel)]="broj_mobitela" />
+        <br />
+        <label for="korime">Korisničko ime:</label><br />
+        <input type="text" id="korime" name="korime" [(ngModel)]="korime" disabled />
+        <br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" [(ngModel)]="email" disabled />
+        <br />
+        <button class="frm-button" type="button" (click)="spremiPromjene()">Ažuriraj</button>
+    </div>
+  </div>
+</div>
+  

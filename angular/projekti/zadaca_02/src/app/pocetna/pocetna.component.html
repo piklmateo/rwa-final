@@ -1,0 +1,21 @@
+<!-- series.component.html -->
+<div>
+    <div>
+        <input class="search" type="text" [(ngModel)]="filter" placeholder="Search" (keyup)="onFilterChange()">
+    </div>
+    <div>
+      <table>
+        <tr>
+          <th>Naslov</th>
+          <th>Opis</th>
+          <th>Detalji</th>
+        </tr>
+        <tr *ngFor="let series of listaSerija">
+          <td>{{ series.name }}</td>
+          <td>{{ series.overview }}</td>
+          <td><button class="btnDetalji" (click)="redirectSerijeDetalji(series.id)">Detalji</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+<div>
+  <br />
+  <div class="korisnici-container">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>ime</th>
+        <th>prezime</th>
+        <th>adresa</th>
+        <th>Postanski broj</th>
+        <th>Broj mobitela</th>
+        <th>korime</th>
+        <th>lozinka</th>
+        <th>email</th>
+        <th>tip korisnika</th>
+        <th>DELETE</th>
+      </tr>
+      <tr *ngFor="let k of korisnici">
+        <td>{{ k.id_korisnika }}</td>
+        <td>{{ k.ime }}</td>
+        <td>{{ k.prezime }}</td>
+        <td>{{ k.adresa }}</td>
+        <td>{{ k.postanski_broj }}</td>
+        <td>{{ k.broj_mobitela }}</td>
+        <td>{{ k.korime }}</td>
+        <td>{{ k.lozinka }}</td>
+        <td>{{ k.email }}</td>
+        <td>{{ k.tip_korisnika_id }}</td>
+        <td><button (click)="obrisiKorisnika(k.korime)">Obrisi</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

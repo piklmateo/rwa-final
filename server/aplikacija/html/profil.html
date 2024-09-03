@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/mpikl20.css">
+    <title>Profil</title>
+    <script src="/js/funkcije.js"></script>
+    <script src="/js/profil.js"></script>
+</head>
+<body class="background container">
+    <header>
+        <div class="logo-container">
+            <div><img class="logo" src="/slike/tv_logo.png" alt="tv_logo"></div>
+            <div><h1>Profil</h1></div>
+        </div>
+    </header>
+    <nav class="nav">#navigacija#</nav><br><br>
+    <div class="div-line"></div>
+    <main>
+        <div id="poruka">#poruka#</div>
+        <div id="sadrzaj"></div>
+
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-item">
+                    <label for="ime">Ime:</label><br>
+                    <input type="text" id="ime" name="ime">
+                    <br>
+                    <label for="prezime">Prezime:</label><br>
+                    <input type="text" id="prezime" name="prezime">
+                    <br>
+                    <label for="adresa">Adresa:</label><br>
+                    <input type="text" id="adresa" name="adresa">
+                    <br>
+                    <label for="postanski_broj">Postanski broj:</label><br>
+                    <input type="number" id="postanski_broj" name="postanski_broj">
+                    <br>
+                    <label for="broj_mobitela">Broj mobitela:</label><br>
+                    <input type="number" id="broj_mobitela" name="broj_mobitela">
+                    <br>
+                    <label for="korime">Korisničko ime:</label><br>
+                    <input type="text" id="korime" name="korime" disabled>
+                    <br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" disabled>
+                    <br>
+                    <button class="frm-button" type="submit" id="spremi_promjene">Ažuriraj</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="text-center">&copy; 2023. Mateo Pikl</p>
+    </footer>
+</body>
+</html>

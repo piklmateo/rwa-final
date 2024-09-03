@@ -1,0 +1,26 @@
+{
+	"name": "vjezba_03",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.mjs",
+	"scripts": {
+		"pripremi": "npm link --save express sqlite3 express-session cookie-parser jsonwebtoken totp-generator base32-encoding nodemailer cors",
+		"debug": "nodemon server.mjs rwa_mpikl20_conf.csv",
+		"start": "npm run pripremi && node server.mjs rwa_mpikl20_conf.csv",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mateo Pikl",
+	"license": "ISC",
+	"dependencies": {
+		"base32-encoding": "file:../../../../../usr/local/lib/node_modules/base32-encoding",
+		"cookie-parser": "file:../../../../../usr/local/lib/node_modules/cookie-parser",
+		"cors": "file:../../../../../usr/local/lib/node_modules/cors",
+		"express": "file:../../../../../usr/local/lib/node_modules/express",
+		"express-session": "file:../../../../../usr/local/lib/node_modules/express-session",
+		"jsonwebtoken": "file:../../../../../usr/local/lib/node_modules/jsonwebtoken",
+		"nodemailer": "file:../../../../../usr/local/lib/node_modules/nodemailer",
+		"sqlite3": "file:../../../../../usr/local/lib/node_modules/sqlite3",
+		"totp": "file:../../../../../usr/local/lib/node_modules/totp",
+		"totp-generator": "file:../../../../../usr/local/lib/node_modules/totp-generator"
+	}
+}

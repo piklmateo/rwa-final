@@ -1,0 +1,29 @@
+<div class="profile-container">
+  <div class="profile">
+    <div class="profile-item">
+      <form (ngSubmit)="Prijava()" #loginForm="ngForm">
+        <label class="first-label" for="korime">Korisničko ime:</label>
+        <input name="korime" type="text" required [(ngModel)]="korimeInput" />
+        <label for="lozinka">Lozinka:</label>
+        <input name="lozinka" type="password" required [(ngModel)]="lozinkaInput" />
+        <!--<label for="totp">TOTP kod:</label>
+        <input name="totp" type="text" [(ngModel)]="totp" />-->
+        <button class="frm-button" type="submit" [disabled]="loginForm.invalid">
+          Prijavi se
+        </button>
+      </form>
+      <div class="github_login">
+        <div class="github_login_item">
+          <p>Prijava putem githuba</p>
+        </div>
+        <div class="github_login_item">
+          <a (click)="loginWithGitHub()"><img class="github_icon" src="../../assets/github_icon.png" alt="github_login_icon"></a>
+        </div>
+      </div>
+    </div>
+    <div class="user-info">
+      <p>Korisničko ime: <span>administrator</span>, Lozinka: <span>rwa</span></p>
+      <p>Korisničko ime: <span>obican</span>, Lozinka: <span>rwa</span></p>
+    </div>
+  </div>
+</div>

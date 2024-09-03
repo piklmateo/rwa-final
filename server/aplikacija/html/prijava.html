@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prijava</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/mpikl20.css">
+</head>
+
+<body class="background container">
+    <header>
+        <div class="logo-container">
+            <div><img class="logo" src="/slike/tv_logo.png" alt="tv_logo"></div>
+            <div><h1>Prijava</h1></div>
+        </div>
+    </header>
+    <nav class="nav">#navigacija#</nav>
+    <div class="div-line"></div>
+    <main>
+        <div id="poruka">#poruka#</div>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-item">
+                    <form action="/prijava" method="POST">
+                        <label for="korime">Korisničko ime:</label>
+                        <input name="korime" type="text" />
+                        <label for="lozinka">Lozinka:</label>
+                        <input name="lozinka" type="password" />
+                        <label for="totp">TOTP kod:</label>
+                        <input name="totp" type="text"/>
+                        <button class="frm-button" type="submit" value="Prijavi">Prijavi se</button>
+                    </form>
+                    <form action="/odjava" method="GET">
+                        <button class="frm-button" type="submit" value="Odjavi se">Odjavi se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="text-center">&copy; 2023. Mateo Pikl</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<div *ngIf="seriesDetails" class="split">
+  <div class="split-item-img">
+    <img class="series-image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{ seriesDetails.poster_path }}" width="100" alt="slika_{{ seriesDetails.name }}" />
+  </div>
+  <div class="split-item">
+    <h1 class="series-name">{{ seriesDetails.name }}</h1>
+    <p class="series-details">{{ seriesDetails.overview }}</p>
+    <p class="series-seasons">Number of Seasons: {{ seriesDetails.number_of_seasons }}</p>
+    <p class="series-episodes">Number of Episodes: {{ seriesDetails.number_of_episodes }}</p>
+    <p class="series-popularity">Popularity: {{ seriesDetails.popularity }}</p>
+    <p class="series-homepage">Homepage: <a href="{{ seriesDetails.homepage }}" target="_blank">{{ seriesDetails.homepage }}</a></p>
+  </div>
+</div>
+  

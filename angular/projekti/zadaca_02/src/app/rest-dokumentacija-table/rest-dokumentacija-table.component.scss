@@ -1,0 +1,16 @@
+.table-center {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    max-width:fit-content;
+}
+
+td, th {
+    border: 0.0625rem solid;
+    text-align: center;
+    padding: 0.5rem;
+    border-color: var(--clr-grey);
+}
